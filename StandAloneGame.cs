@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class StandAloneGame : MonoBehaviour, IPlayerListener {
 	public InputField[] _inputField;
-	[SerializeField]
 	private Board _board;
 	private string _string;
 

@@ -267,8 +267,5 @@ public class TestStandAloneGame {
 		Assert.AreEqual (10, board.CurrentPlayer.Position);
 		board.Undo ();
 		Assert.AreEqual (0, board.CurrentPlayer.Position);
-
-
-
 	}
 }

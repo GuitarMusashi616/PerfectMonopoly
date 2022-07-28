@@ -5,7 +5,6 @@ using UnityEngine;
 
 [Serializable]
 public class Square {
-	[SerializeField]
 	private string _name;
 	// private List<Player> _visitors;
 

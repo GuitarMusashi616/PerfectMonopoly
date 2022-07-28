@@ -5,9 +5,7 @@ using UnityEngine;
 
 [Serializable]
 public abstract class OwnableSquare : Square {
-	[SerializeField]
 	private Player _owner;
-	[SerializeField]
 	private int _price;
 	private bool _isMortgaged;
 

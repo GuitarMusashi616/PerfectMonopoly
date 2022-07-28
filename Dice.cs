@@ -6,7 +6,6 @@ using UnityEngine;
 [Serializable]
 public class Dice {
 	
-	[SerializeField]
 	protected int[] _faces;
 	private System.Random _rand;
 

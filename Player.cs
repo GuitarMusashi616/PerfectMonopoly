@@ -7,13 +7,9 @@ using UnityEngine;
 public class Player {
 	private int _number;
 	private int _boardLength;
-	[SerializeField]
 	private string _name;
-	[SerializeField]
 	private int _position;
-	[SerializeField]
 	private int _cash;
-	[SerializeField]
 	private List<OwnableSquare> _ownedSquares;
 	private List<IPlayerListener> _subscribers;
 

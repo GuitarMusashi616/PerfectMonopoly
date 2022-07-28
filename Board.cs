@@ -7,12 +7,10 @@ using UnityEngine;
 public class Board
 {
 	private int _whoseTurn;
-	[SerializeField]
 	private List<Player> _players;
 	private List<Square> _squares;
 	private CommandProcessor _commandProcessor;
 	private State _state;
-	[SerializeField]
 	private Dice _dice;
 
 	public Board (int numPlayers)
@@ -85,17 +83,7 @@ public class Board
 			_whoseTurn = (_whoseTurn + 1) % _players.Count;
 		}
 	}
-
-//	public void Turn () {
-//		do {
-//			if (dice.DoubleCount > 3) {
-//				GoToJail();
-//				break;
-//			}
-//			dice.Roll ();
-//			Move (dice.Total);
-//		} while (dice.Doubles);
-//	}
+		
 	private void landOnSquare() {
 		Command command = CurrentSquare.VisitedBy (CurrentPlayer);
 		_commandProcessor.Execute (command);
